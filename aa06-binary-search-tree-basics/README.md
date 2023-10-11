@@ -79,3 +79,5 @@ Read through the specs in `test/binary-search-tree-spec.js` for more details.
 
 
 [starter]: https://github.com/appacademy-starters/practice-for-week-06-binary-search-tree-guided-practice
+
+This works. ~GSW~
