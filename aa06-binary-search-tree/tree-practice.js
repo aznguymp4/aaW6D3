@@ -182,26 +182,10 @@ function deleteNodeBST(rootNode, target) {
 
   // Case 3: One child:
   if((currentNode.left && !currentNode.right) || (!currentNode.left && currentNode.right)) {
-    // const actualCurrent = parentNode[target < parentNode.val? 'left' : 'right']
-    // const replacement = actualCurrent[target < actualCurrent.val? 'left' : 'right']
-    // console.log(actualCurrent.val, target, parentNode.val, replacement.val)
-
-    // actualCurrent.val = replacement.val
-    // actualCurrent.left = replacement.left
-    // actualCurrent.right = replacement.right
-  
-    console.log('====================================================')
-    console.log(parentNode)
-    
-    console.log('====================================================')
-    console.log(parentNode[target < parentNode.val? 'left' : 'right'].val)
-    console.log('====================================================', currentNode.val)
-    parentNode[target < parentNode.val? 'left' : 'right'].val = currentNode.val
-    
-    console.log(parentNode)
-    console.log('====================================================')
+    const child = currentNode.left || currentNode.right
+    //   Make the parent point to the child
+    parentNode[target < parentNode.val? 'left' : 'right'] = child
   }
-  //   Make the parent point to the child
 
 }
 
